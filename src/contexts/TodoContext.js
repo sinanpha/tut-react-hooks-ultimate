@@ -9,7 +9,8 @@ const TodoContextProvider = ({ children }) => {
   // const [todos, setTodos] = useState([])
   const [todos, dispatch] = useReducer(todoReducer, [])
 
-  // useEffect : useEffect sẽ chạy ít nhất 1 lần sau khi render xong, chạy tiếp nếu có điều kiện kèm theo. tham số thứ 2 nếu là mảng rỗng chỉ chạy 1 lần
+  // useEffect : useEffect sẽ chạy ít nhất 1 lần sau khi render xong, chạy tiếp nếu có điều kiện kèm theo. 
+  // tham số thứ 2 nếu là mảng rỗng chỉ chạy 1 lần
   // nếu tham số thứ 2 là [todos] có nghĩa là chạy lại mỗi khi todos thay đổi
   useEffect(() => {
     dispatch({
